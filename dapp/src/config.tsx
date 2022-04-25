@@ -1,9 +1,9 @@
-export const contractAddress =
-  'erd1qqqqqqqqqqqqqpgql8s9x4hgnf702ce3qlm6c22735ch0cays95qs5ezv9';
+export const contractAddress = 'xxxxxxxxxx';
 
-export const contractOwnerAddress =
-  'erd10ypsxdd04qmcwt8f0n9kcs4fjxjvvcw7nz62t8fxzhq0rnh8wjtslpjzvq';
+export const contractOwnerAddress = 'xxxxxxxxxx';
 
 export const dAppTitle = 'Instant ICO';
 export const dAppName = 'Public Round 1 - Long term investors';
-export const environment = 'mainnet';
+export const environment = 'testnet';
+// Set baseUrl in case of static app served on Apache or other server
+// export const baseUrl = '/dapp-ico';
