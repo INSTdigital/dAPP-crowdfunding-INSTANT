@@ -4,7 +4,7 @@ import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Navbar as BsNavbar, NavItem, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { dAppTitle } from 'config';
+import { baseUrl, dAppTitle } from 'config';
 import { routeNames } from 'routes';
 import { ReactComponent as ElrondLogo } from './../../../assets/img/elrond.svg';
 import { ReactComponent as InstantLogo } from './../../../assets/img/instant.svg';
@@ -13,7 +13,7 @@ const Navbar = () => {
   const { address } = useGetAccountInfo();
 
   const handleLogout = () => {
-    logout(`${window.location.origin}/unlock`);
+    logout(`${window.location.origin}${baseUrl}${routeNames.home}`);
   };
 
   const isLoggedIn = Boolean(address);

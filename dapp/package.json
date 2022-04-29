@@ -1,10 +1,11 @@
 {
-  "name": "@elrondnetwork/dapp-template",
+  "name": "@INSTdigital/dapp-ico",
+  "homepage": ".",
   "description": "Inst.Digital ICO",
   "version": "0.2.0",
-  "author": "ElrondNetwork",
+  "author": "INSTdigital",
   "license": "GPL-3.0-or-later",
-  "repository": "@elrondnetwork/dapp-template",
+  "repository": "@INSTdigital/dAPP-crowdfunding-INSTANT",
   "dependencies": {
     "@elrondnetwork/dapp-core": "1.0.0",
     "@elrondnetwork/dapp-utils": "0.1.3",

@@ -3,7 +3,7 @@ import React from 'react';
 import { DappUI, DappProvider } from '@elrondnetwork/dapp-core';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import Layout from 'components/Layout';
-import { environment } from 'config';
+import { baseUrl, environment } from 'config';
 import PageNotFound from 'pages/PageNotFound';
 import { routeNames } from 'routes';
 import routes from 'routes';
@@ -20,7 +20,7 @@ const {
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={baseUrl}>
       <DappProvider
         environment={environment}
         customNetworkConfig={{ name: 'customConfig', apiTimeout: 6000 }}
@@ -33,7 +33,9 @@ const App = () => {
           <Routes>
             <Route
               path={routeNames.unlock}
-              element={<UnlockPage loginRoute={routeNames.dashboard} />}
+              element={
+                <UnlockPage loginRoute={`${baseUrl}${routeNames.dashboard}`} />
+              }
             />
             {routes.map((route: any, index: number) => (
               <Route
